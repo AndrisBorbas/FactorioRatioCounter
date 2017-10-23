@@ -35,8 +35,12 @@ int main()
 	float RequiredTimesPerMinute = (60 / RequiredTimePerRecipeInSec);
 	float IngredientPerMinute = (IngredientTimesPerMinute * ItemsProduced);
 	float RequiredPerMinute = (RequiredTimesPerMinute * ItemsRequired);
+	float PerSI = (IngredientPerMinute / 60);
+	float PerSR = (RequiredPerMinute / 60);
 	cout << endl << endl << "Ingredients produced per minute by one crafting machine: " << IngredientPerMinute;
 	cout << endl << "Required ingredients per minute by one crafting machine: " << RequiredPerMinute;
+	cout << endl << endl << "Ingredients produced per second by one crafting machine: " << PerSI;
+	cout << endl << "Required ingredients per second by one crafting machine: " << PerSR;
 	if (IngredientPerMinute > RequiredPerMinute && IngredientPerMinute != RequiredPerMinute) {
 		RatioMulti = (IngredientPerMinute / RequiredPerMinute); isIngredientMore = true; }
 	if (IngredientPerMinute < RequiredPerMinute && IngredientPerMinute != RequiredPerMinute) {

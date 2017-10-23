@@ -1,0 +1,5 @@
+﻿  FactorioRatioCounter.cpp
+d:\projects\github\factorioratiocounter\factorioratiocounter\factorioratiocounter.cpp(63): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\projects\github\factorioratiocounter\factorioratiocounter\factorioratiocounter.cpp(64): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  FactorioRatioCounter.vcxproj -> D:\Projects\Github\FactorioRatioCounter\x64\Debug\FactorioRatioCounter.exe
+  FactorioRatioCounter.vcxproj -> D:\Projects\Github\FactorioRatioCounter\x64\Debug\FactorioRatioCounter.pdb (Partial PDB)
