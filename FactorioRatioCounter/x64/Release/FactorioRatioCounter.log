@@ -1,6 +1,9 @@
 ﻿  stdafx.cpp
   FactorioRatioCounter.cpp
-FactorioRatioCounter.cpp(40): error C2062: type 'float' unexpected
-FactorioRatioCounter.cpp(41): error C2062: type 'float' unexpected
-FactorioRatioCounter.cpp(61): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-FactorioRatioCounter.cpp(62): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+FactorioRatioCounter.cpp(63): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+FactorioRatioCounter.cpp(64): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Generating code
+  All 12 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  FactorioRatioCounter.vcxproj -> D:\Projects\Github\FactorioRatioCounter\x64\Release\FactorioRatioCounter.exe
+  FactorioRatioCounter.vcxproj -> D:\Projects\Github\FactorioRatioCounter\x64\Release\FactorioRatioCounter.pdb (Full PDB)
