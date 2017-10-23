@@ -1,8 +1,4 @@
-﻿  stdafx.cpp
-  FactorioRatioCounter.cpp
-FactorioRatioCounter.cpp(63): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-FactorioRatioCounter.cpp(64): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  Generating code
+﻿  Generating code
   All 12 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
   FactorioRatioCounter.vcxproj -> D:\Projects\Github\FactorioRatioCounter\x64\Release\FactorioRatioCounter.exe
