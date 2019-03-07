@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "math.h"
 #include "iostream"
 #include "string"
@@ -42,11 +41,14 @@ int main()
 	cout << endl << endl << "Ingredients produced per second by one crafting machine: " << PerSI;
 	cout << endl << "Required ingredients per second by one crafting machine: " << PerSR;
 	if (IngredientPerMinute > RequiredPerMinute && IngredientPerMinute != RequiredPerMinute) {
-		RatioMulti = (IngredientPerMinute / RequiredPerMinute); isIngredientMore = true; }
+		RatioMulti = (IngredientPerMinute / RequiredPerMinute); isIngredientMore = true;
+	}
 	if (IngredientPerMinute < RequiredPerMinute && IngredientPerMinute != RequiredPerMinute) {
-		RatioMulti = (RequiredPerMinute / IngredientPerMinute); isRequiredMore = true; }
+		RatioMulti = (RequiredPerMinute / IngredientPerMinute); isRequiredMore = true;
+	}
 	if (IngredientPerMinute == RequiredPerMinute) {
-		RatioMulti = (RequiredPerMinute / RequiredPerMinute); isEqual = true; }
+		RatioMulti = (RequiredPerMinute / RequiredPerMinute); isEqual = true;
+	}
 	cout << endl << endl << "Ratio Multiplier: " << RatioMulti;
 	cout << endl << "Which means you need "; Number();
 	int iIngredientPerMinute = int(IngredientPerMinute);
@@ -70,10 +72,10 @@ int main()
 	/*if (isRequiredMore == true) cout << endl << "((Ingredient:Product) in number of crafting machines.)";
 	if (isIngredientMore == true) cout << endl << "((Product:Ingredient) in number of crafting machines.)";*/
 	//experimental
-	while (isEQ!=true) {
+	while (isEQ != true) {
 		i++;
-		RatioMulti = RatioMulti*i;
-		if(ceilf(RatioMulti)==RatioMulti) isEQ=true;
+		RatioMulti = RatioMulti * i;
+		if (ceilf(RatioMulti) == RatioMulti) isEQ = true;
 	}
 	cout << endl << endl << endl << "~~~~~DEBUG~~~~~";
 	cout << endl << isEqual << isRequiredMore << isIngredientMore;
