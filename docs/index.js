@@ -21,6 +21,7 @@ function CalculateRatio() {
    var TimeToCreateInSecProduct = document.getElementById("ProductTime").value;
    var ItemsRequired = document.getElementById("ProductNumber").value;
    var CraftingSpeedProduct = document.getElementById("ProductSpeed").value;
+   console.log("wasd");
    if (TimeToCreateInSecIngredient !== TimeToCreateInSecIngredient) {
       console.log("wasd");
       return 0;
