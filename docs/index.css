@@ -1,7 +1,12 @@
+html {
+   height: 100%;
+}
+
 body {
    background-image: linear-gradient(#222, #120515);
    color: #eee;
    font-family: 'Nunito Sans', sans-serif;
+   height: auto;
 }
 
 h1 {
@@ -17,48 +22,84 @@ h2 {
 }
 
 h3 {
-   margin: 0;
-   padding: 0;
+   margin: 6px;
+   padding: 6px;
 }
 
 p {
-   padding-top: 3px;
    text-align: right;
-   margin-bottom: 0px;
+   vertical-align: middle;
 }
 
 hr {
    width: 70%;
    background-color: #333;
+   color: #333;
+   border-color: #333;
    margin-top: 15px;
    margin-bottom: 15px;
 }
 
-.tx {
-   text-align: left;
-}
-
-.tc-h {
+table {
+   width: 66.666%;
+   margin: auto;
    text-align: center;
+   color: #eee;
+   background-color: #3335;
+   border-radius: 4px;
+   border-top: 1px solid black;
+   border-left: 1px solid black;
+   border-right: 1px solid #382d47;
+   border-bottom: 1px solid #382d47;
+   vertical-align: middle;
 }
 
-.row {}
+tr {}
+
+th {
+   border-radius: 4px;
+   border-top: 1px solid black;
+   border-left: 1px solid black;
+   border-right: 1px solid #382d47;
+   border-bottom: 1px solid #382d47;
+}
+
+td {
+   border-radius: 4px;
+   border-top: 1px solid black;
+   border-left: 1px solid black;
+   border-right: 1px solid #382d47;
+   border-bottom: 1px solid #382d47;
+}
 
 .invis {
-   visibility: hidden;
+   border: 0;
 }
 
-[class*="col-"] {
-   border-radius: 4px;
+.textcell {
+   padding-right: 4px;
 }
 
-.row .row {
-   margin-left: -11px;
-   margin-bottom: -11px;
-   margin-right: -11px;
+.inputcell {
+   padding-left: 4px;
+   padding-right: 4px;
 }
 
-.its>* {}
+.table {}
+
+.cell {
+   width: 30%;
+}
+
+.tx {
+   text-align: left;
+   padding: 0;
+   margin: 0;
+   margin-left: 4px;
+   padding-left: 4px;
+   padding-bottom: 10px;
+   padding-top: 2px;
+}
 
 input {
    width: 95%;
@@ -77,12 +118,23 @@ input {
 .btn {
    color: #fff;
    background-color: #333;
-}
-
-.sml {
-   width: 100%;
+   border-radius: 2px;
+   border-top: 1px solid black;
+   border-left: 1px solid black;
+   border-right: 1px solid #382d47;
+   border-bottom: 1px solid #382d47;
 }
 
 .bg {
    font-size: 200%;
+}
+
+.offset {
+   margin: 0;
+   margin-top: 4px;
+   margin-bottom: -30px;
+   padding: 0;
+   padding-right: 10px;
+   font-size: 30px;
+   text-align: right;
 }

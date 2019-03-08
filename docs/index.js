@@ -15,6 +15,9 @@ function CalculateText(RatioMulti) {
 }
 
 function CalculateRatio() {
+   isRequiredMore = false;
+   isIngredientMore = false;
+   isEqual = false;
    var TimeToCreateInSecIngredient = document.getElementById("IngredientTime").value;
    var ItemsProduced = document.getElementById("IngredientNumber").value;
    var CraftingSpeedIngredient = document.getElementById("IngredientSpeed").value;
