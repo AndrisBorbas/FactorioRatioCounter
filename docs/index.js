@@ -75,5 +75,5 @@ function CalculateRatio() {
    var IngredientRatio = max / IngredientPerMinute;
    var ProductRatio = max / RequiredPerMinute;
    //console.log(ProductRatio);
-   document.getElementById("ratio").innerHTML = (IngredientRatio + ":" + ProductRatio);
+   document.getElementById("ratio").innerHTML = ("Ratio: " + IngredientRatio + ":" + ProductRatio);
 }

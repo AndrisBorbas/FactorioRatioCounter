@@ -119,10 +119,10 @@ input {
    color: #fff;
    background-color: #333;
    border-radius: 2px;
-   border-top: 1px solid black;
-   border-left: 1px solid black;
-   border-right: 1px solid #382d47;
-   border-bottom: 1px solid #382d47;
+   border-top: 2px solid black;
+   border-left: 2px solid black;
+   border-right: 2px solid #382d47;
+   border-bottom: 2px solid #382d47;
 }
 
 .bg {
@@ -137,4 +137,8 @@ input {
    padding-right: 10px;
    font-size: 30px;
    text-align: right;
+}
+
+.xpl {
+   color: #aaa;
 }
