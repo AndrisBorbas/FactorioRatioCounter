@@ -12,103 +12,106 @@
 
       <title>Factorio Ratio Counter</title>
 
-      <link rel="stylesheet" href="index.css">
+      <!-- Bootstrap core CSS -->
+      <link href="bootstrap-4.3.1\css\bootstrap.css" rel="stylesheet">
+
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+      <link href="index.css" rel="stylesheet">
       <script src="index.js" charset="utf-8"></script>
 
    </head>
 
    <body>
       <div class="container">
+
          <div class="page-header">
             <h1>Factorio Ratio Counter</h1>
          </div>
-         <table>
-            <tr>
-               <th colspan="2">
-                  <h3>Ingredient</h3>
-               </th>
-               <th colspan="2">
-                  <h3>Product</h3>
-               </th>
-            </tr>
-            <tr>
-               <td class="textcell">
-                  <p>Raw Time:</p>
-               </td>
-               <td class="inputcell">
-                  <input type="number" id="IngredientTime" value="" placeholder="number of seconds">
-               </td>
-               <td class="textcell">
-                  <p>Raw Time:</p>
-               </td>
-               <td class="inputcell">
-                  <input type="number" id="ProductTime" value="" placeholder="number of seconds">
-               </td>
-            </tr>
-            <tr>
-               <td class="textcell">
-                  <p>Number of items:</p>
-               </td>
-               <td class="inputcell">
-                  <input type="number" id="IngredientNumber" value="" placeholder="number of ingredients">
-               </td>
-               <td class="textcell">
-                  <p>Number of items:</p>
-               </td>
-               <td class="inputcell">
-                  <input type="number" id="ProductNumber" value="" placeholder="number of products">
-               </td>
-            </tr>
-            <tr>
-               <td class="textcell">
-                  <p>Crafting Speed:</p>
-               </td>
-               <td class="inputcell">
-                  <input type="number" id="IngredientSpeed" value="" placeholder="speed of the machine">
-               </td>
-               <td class="textcell">
-                  <p>Crafting Speed:</p>
-               </td>
-               <td class="inputcell">
-                  <input type="number" id="ProductSpeed" value="" placeholder="speed of the machine">
-               </td>
-            </tr>
-         </table>
-         <hr>
-         <div class="butt">
-            <button type="button" class="btn" onclick="CalculateRatio()">
-               <h2>Calculate</h2>
-            </button>
+
+         <div class="row">
+            <div class="col-md-2 invis"></div>
+            <div class="col-md-4 tc-h">
+               <h3>Ingredient</h3>
+               <div class="row its">
+                  <div class="col-md-5">
+                     <p>Raw Time:</p>
+                  </div>
+                  <div class="col-md-7">
+                     <input type="number" id="IngredientTime" value="" placeholder="number of seconds">
+                  </div>
+               </div>
+               <div class="row its">
+                  <div class="col-md-5">
+                     <p>Number of items produced:</p>
+                  </div>
+                  <div class="col-md-7">
+                     <input type="number" id="IngredientNumber" value="" placeholder="number of items">
+                  </div>
+               </div>
+               <div class="row its">
+                  <div class="col-md-5">
+                     <p>Crafting Speed:</p>
+                  </div>
+                  <div class="col-md-7">
+                     <input type="number" id="IngredientSpeed" value="" placeholder="speed of the machine">
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 tc-h">
+               <h3>Product</h3>
+               <div class="row its">
+                  <div class="col-md-5">
+                     <p>Raw Time:</p>
+                  </div>
+                  <div class="col-md-7">
+                     <input type="number" id="ProductTime" value="" placeholder="number of seconds">
+                  </div>
+               </div>
+               <div class="row its">
+                  <div class="col-md-5">
+                     <p>Number of items needed:</p>
+                  </div>
+                  <div class="col-md-7">
+                     <input type="number" id="ProductNumber" value="" placeholder="number of items">
+                  </div>
+               </div>
+               <div class="row its">
+                  <div class="col-md-5">
+                     <p>Crafting Speed:</p>
+                  </div>
+                  <div class="col-md-7">
+                     <input type="number" id="ProductSpeed" value="" placeholder="speed of the machine">
+                  </div>
+               </div>
+            </div>
          </div>
          <hr>
-         <table>
-            <tr>
-               <td>
-                  <div class="offset">
-                     Output
-                  </div>
-                  <p class="tx" id="ipm">Ingredients produced per <strong>minute</strong> by one crafting machine: </p>
-                  <p class="tx" id="rpm">Required ingredients per <strong>minute</strong> for one crafting machine: </p>
-                  <p class="tx" id="psi">Ingredients produced per <strong>second</strong> by one crafting machine: </p>
-                  <p class="tx" id="psr">Required ingredients per <strong>second</strong> for one crafting machine: </p>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <p class="tx" id="ratiomulti">RatioMultiplier: </p>
-                  <p class="tx" id="need">Which means you need </p>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <p class="tx xpl">Actual ratio output only works perfectly if both per minute numbers are whole numbers.</p>
-                  <p class="tx bg" id="ratio">Ratio: 0:0</p>
-                  <p class="tx xpl">((Ingredient:Product) in number of crafting machines.)</p>
-               </td>
-            </tr>
-         </table>
-         <h4>Don't press Calculate with empty fields as that will freeze the page. I'll fix this as soon as i know how to.</h4>
-      </div>
+         <div class="butt">
+            <button type="button" class="btn" onclick="CalculateRatio()">Calculate</button>
+         </div>
+         <hr>
+         <div class="row">
+            <div class="col-md-2 invis"></div>
+            <div class="col-md-8 tc-h">
+               <h2>Output</h2>
+               <p class="tx" id="ipm">Ingredients produced per <strong>minute</strong> by one crafting machine: </p>
+               <p class="tx" id="rpm">Required ingredients per <strong>minute</strong> for one crafting machine: </p>
+               <p class="tx" id="psi">Ingredients produced per <strong>second</strong> by one crafting machine: </p>
+               <p class="tx" id="psr">Required ingredients per <strong>second</strong> for one crafting machine: </p>
+               <hr class="sml">
+               <p class="tx" id="ratiomulti">RatioMultiplier: </p>
+               <p class="tx" id="need">Which means you need </p>
+               <hr class="sml">
+               <p class="tx xpl">Actual ratio output only works perfectly if both per minute numbers are whole numbers.</p>
+               <p class="tx bg" id="ratio">0:0</p>
+               <p class="tx xpl">((Ingredient:Product) in number of crafting machines.)</p>
+            </div>
+         </div>
+
+      </div> <!-- /container -->
+
    </body>
 
 </html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <meta name="description" content="Factorio Ratio Counter">
+      <meta name="author" content="AndrisBorbas">
+      <link rel="icon" href="favicon.png">
+
+      <title>Factorio Ratio Counter</title>
+
+      <link rel="stylesheet" href="index.css">
+      <script src="index.js" charset="utf-8"></script>
+
+   </head>
+
+   <body>
+      <div class="container">
+         <div class="page-header">
+            <h1>Factorio Ratio Counter</h1>
+         </div>
+         <table>
+            <tr>
+               <th colspan="2">
+                  <h3>Ingredient</h3>
+               </th>
+               <th colspan="2">
+                  <h3>Product</h3>
+               </th>
+            </tr>
+            <tr>
+               <td class="textcell">
+                  <p>Raw Time:</p>
+               </td>
+               <td class="inputcell">
+                  <input type="number" id="IngredientTime" value="" placeholder="number of seconds">
+               </td>
+               <td class="textcell">
+                  <p>Raw Time:</p>
+               </td>
+               <td class="inputcell">
+                  <input type="number" id="ProductTime" value="" placeholder="number of seconds">
+               </td>
+            </tr>
+            <tr>
+               <td class="textcell">
+                  <p>Number of items:</p>
+               </td>
+               <td class="inputcell">
+                  <input type="number" id="IngredientNumber" value="" placeholder="number of ingredients">
+               </td>
+               <td class="textcell">
+                  <p>Number of items:</p>
+               </td>
+               <td class="inputcell">
+                  <input type="number" id="ProductNumber" value="" placeholder="number of products">
+               </td>
+            </tr>
+            <tr>
+               <td class="textcell">
+                  <p>Crafting Speed:</p>
+               </td>
+               <td class="inputcell">
+                  <input type="number" id="IngredientSpeed" value="" placeholder="speed of the machine">
+               </td>
+               <td class="textcell">
+                  <p>Crafting Speed:</p>
+               </td>
+               <td class="inputcell">
+                  <input type="number" id="ProductSpeed" value="" placeholder="speed of the machine">
+               </td>
+            </tr>
+         </table>
+         <hr>
+         <div class="butt">
+            <button type="button" class="btn" onclick="CalculateRatio()">
+               <h2>Calculate</h2>
+            </button>
+         </div>
+         <hr>
+         <table>
+            <tr>
+               <td>
+                  <div class="offset">
+                     Output
+                  </div>
+                  <p class="tx" id="ipm">Ingredients produced per <strong>minute</strong> by one crafting machine: </p>
+                  <p class="tx" id="rpm">Required ingredients per <strong>minute</strong> for one crafting machine: </p>
+                  <p class="tx" id="psi">Ingredients produced per <strong>second</strong> by one crafting machine: </p>
+                  <p class="tx" id="psr">Required ingredients per <strong>second</strong> for one crafting machine: </p>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <p class="tx" id="ratiomulti">RatioMultiplier: </p>
+                  <p class="tx" id="need">Which means you need </p>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <p class="tx xpl">Actual ratio output only works perfectly if both per minute numbers are whole numbers.</p>
+                  <p class="tx bg" id="ratio">Ratio: 0:0</p>
+                  <p class="tx xpl">((Ingredient:Product) in number of crafting machines.)</p>
+               </td>
+            </tr>
+         </table>
+         <h4>Don't press Calculate with empty fields as that will freeze the page. I'll fix this as soon as i know how to.</h4>
+      </div>
+   </body>
+
+</html>
