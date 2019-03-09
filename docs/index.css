@@ -120,3 +120,9 @@ input {
 .xpl {
    color: #aaa;
 }
+
+h4 {
+   color: #888;
+   text-align: center;
+   margin-top: 3em;
+}
