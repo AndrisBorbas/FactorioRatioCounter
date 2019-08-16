@@ -68,7 +68,7 @@ function CalculateRatio() {
    var max = (IngredientPerMinute > RequiredPerMinute) ? IngredientPerMinute : RequiredPerMinute;
    //console.log(max);
    while (true) {
-      if (max % IngredientPerMinute == 0 && max % RequiredPerMinute == 0) {
+      if ((max % IngredientPerMinute == 0 && max % RequiredPerMinute == 0) || isNaN(max)) {
          break;
       } else ++max;
    }
