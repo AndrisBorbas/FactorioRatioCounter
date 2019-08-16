@@ -24,12 +24,6 @@ function CalculateRatio() {
    var TimeToCreateInSecProduct = document.getElementById("ProductTime").value;
    var ItemsRequired = document.getElementById("ProductNumber").value;
    var CraftingSpeedProduct = document.getElementById("ProductSpeed").value;
-   console.log("wasd");
-   if (TimeToCreateInSecIngredient !== TimeToCreateInSecIngredient) {
-      console.log("wasd");
-      return 0;
-   }
-   //console.log(TimeToCreateInSecIngredient, ItemsProduced, CraftingSpeedIngredient, TimeToCreateInSecProduct, ItemsRequired, CraftingSpeedProduct);
 
    var IngredientTimePerRecipeInSec = TimeToCreateInSecIngredient / CraftingSpeedIngredient;
    var RequiredTimePerRecipeInSec = TimeToCreateInSecProduct / CraftingSpeedProduct;
@@ -60,13 +54,11 @@ function CalculateRatio() {
       isEqual = true;
    }
 
-   //console.log("RatioMulti: ", RatioMulti);
-
    document.getElementById("ratiomulti").innerHTML = "RatioMultiplier: " + "<strong>" + RatioMulti + "</strong>";
    document.getElementById("need").innerHTML = "Which means you need " + CalculateText(RatioMulti);
 
    var max = (IngredientPerMinute > RequiredPerMinute) ? IngredientPerMinute : RequiredPerMinute;
-   //console.log(max);
+
    while (true) {
       if ((max % IngredientPerMinute == 0 && max % RequiredPerMinute == 0) || isNaN(max) || max == 0 || !isFinite(RatioMulti)) {
          break;
@@ -74,6 +66,6 @@ function CalculateRatio() {
    }
    var IngredientRatio = max / IngredientPerMinute;
    var ProductRatio = max / RequiredPerMinute;
-   //console.log(ProductRatio);
+
    document.getElementById("ratio").innerHTML = ("Ratio: " + IngredientRatio + ":" + ProductRatio);
 }
